@@ -17,6 +17,15 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
 }
 
+function stat(){
+  let value = getRandomInt(1,10);
+  let bar = " <div class=\"progress\">" + "<div class=\"progress-bar\" \"progress-bar-info\" role=\"progressbar\" aria-valuenow=\"" + value + "0\""
+  + "aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width:" + value + "0%\">"
+  + "<span class=\"sr-only\">" + value + "0% Complete</span></div></div>";
+  let statbar = value + bar;
+  return statbar;
+}
+
 document.getElementById("select-fighters").addEventListener("click", function(event) {
   event.preventDefault();
   
@@ -29,11 +38,11 @@ document.getElementById("select-fighters").addEventListener("click", function(ev
       console.log(json);
       let image = json[0];
       let num = getRandomInt(0,99);
-      let stat1 = "<strong>Strength:</strong> " + getRandomInt(1, 10);
-      let stat2 = "<strong>Charisma:</strong> " + getRandomInt(1, 10);
-      let stat3 = "<strong>Stamina:</strong> " + getRandomInt(1, 10);
-      let stat4 = "<strong>Bloodlust:</strong> " + getRandomInt(1, 10);
-      let stat5 = "<strong>Magic:</strong> " + getRandomInt(1, 10);
+      let stat1 = "<strong>Strength:</strong> " + stat();
+      let stat2 = "<strong>Charisma:</strong> " + stat();
+      let stat3 = "<strong>Stamina:</strong> " + stat();
+      let stat4 = "<strong>Bloodlust:</strong> " + stat();
+      let stat5 = "<strong>Magic:</strong> " + stat();
       document.getElementById("img1").src=image;
       document.getElementById("name-1").innerHTML=names[num];
       document.getElementById("stat1-1").innerHTML=stat1;
@@ -42,7 +51,7 @@ document.getElementById("select-fighters").addEventListener("click", function(ev
       document.getElementById("stat4-1").innerHTML=stat4;
       document.getElementById("stat5-1").innerHTML=stat5;
       
-      document.getElementById("hidden").style.visibility= "visible";
+
 
       /*do stuff here */
     });
@@ -56,11 +65,11 @@ document.getElementById("select-fighters").addEventListener("click", function(ev
       console.log(json);
       let image = json[0];
       let num = getRandomInt(0,99);
-      let stat1 = "<strong>Strength:</strong> " + getRandomInt(1, 10);
-      let stat2 = "<strong>Charisma:</strong> " + getRandomInt(1, 10);
-      let stat3 = "<strong>Stamina:</strong> " + getRandomInt(1, 10);
-      let stat4 = "<strong>Bloodlust:</strong> " + getRandomInt(1, 10);
-      let stat5 = "<strong>Magic:</strong> " + getRandomInt(1, 10);
+      let stat1 = "<strong>Strength:</strong> " + stat();
+      let stat2 = "<strong>Charisma:</strong> " + stat();
+      let stat3 = "<strong>Stamina:</strong> " + stat();
+      let stat4 = "<strong>Bloodlust:</strong> " + stat();
+      let stat5 = "<strong>Magic:</strong> " + stat();
       document.getElementById("img2").src=image;
       document.getElementById("name-2").innerHTML=names[num];
       document.getElementById("stat1-2").innerHTML=stat1;
@@ -69,8 +78,7 @@ document.getElementById("select-fighters").addEventListener("click", function(ev
       document.getElementById("stat4-2").innerHTML=stat4;
       document.getElementById("stat5-2").innerHTML=stat5;
       
-      document.getElementById("hidden2").style.visibility= "visible";
-      document.getElementById("hidden3").style.visibility= "visible";
+
       /*do similar stuff here */
     });
     

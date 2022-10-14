@@ -63,3 +63,13 @@
     padding:20px;
     margin:20px;
 }
+
+#footer {
+   text-align:center;
+   color:#C8C8C8;
+   bottom: 0;
+   width: 100%;
+   padding-top: 17px;
+   height: 60px;   /* Height of the footer */
+   background: #7a0019;
+}
