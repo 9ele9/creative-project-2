@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'/>
+        <title>Pye Battle Sim</title>
+        <link rel="icon" type="image/x-icon" href="/design-principles/images/BarryPyeLogo.svg">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel='stylesheet' href='styles.css'/>
+    </head>
+    <body>
+        <div class="battle-menu">
+            <div class="fightle">
+                <img src="images/flamed-leaf-2.svg" style="width:100px">
+                <h1>CHOOSE YOUR FIGHTERS</h1>
+                <img src="images/flamed-leaf-1.svg" style="width:100px">
+            </div>
+            
+            <div class="butt-hold">
+                <button class="btn btn-lg btn-outline-danger" type="button" id="select-fighters"><a href="#" style="color:#383838"><h2>Select</h2></a></button>
+            </div>
+            
+            <div class="duel-disk">
+                <div class="card" id="hidden" style="visibility:hidden">
+                    <img src="#" id="img1" style="width:300px; height:300px; overflow:hidden; object-fit:cover">
+                    <h3 id="name-1">Combatant 1</h3>
+                    <p id="stat1-1">Stat1</p>
+                    <p id="stat2-1">Stat2</p>
+                    <p id="stat3-1">Stat3</p>
+                    <p id="stat4-1">Stat4</p>
+                    <p id="stat5-1">Stat5</p>
+                </div>
+                
+                <h1 class="versus" id="hidden3" style="visibility:hidden">VS.</h1>
+                
+                <div class="card" id="hidden2" style="visibility:hidden">
+                    <img src="#" id="img2" style="width:300px; height:300px; overflow:hidden; object-fit:cover">
+                    <h3 id="name-2">Combatant 2</h3>
+                    <p id="stat1-2">Stat1</p>
+                    <p id="stat2-2">Stat2</p>
+                    <p id="stat3-2">Stat3</p>
+                    <p id="stat4-2">Stat4</p>
+                    <p id="stat5-2">Stat5</p>               
+                </div>
+                
+            </div>
+            
+        </div>
+	  <script text="type/javascript" src="script-battle.js"></script>
+    </body>
+</html>

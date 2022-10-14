@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'Cram';
+  src: url('/photolab/cormorant_light_macroman.woff') format('woff');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cram';
+  
+}
+
+.battle-menu  {
+  /*border: 1px solid #fff; */
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+   background-color:#f0f0f0;
+   border:5px solid #7a0019;
+   margin:1px;
+}
+
+.fightle {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+
+.fightle h1 {
+    display:flex;
+    padding-top:30px;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.fightle img {
+    display:flex;
+}
+
+.butt-hold {
+    margin-left:45vw;
+    margin-right:45vw;
+    /*margin-left:10vw;
+    margin-right:10vw;*/
+}
+
+.duel-disk {
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.versus {
+    display:flex;
+    padding-top:250px;
+}
+
+.card {
+    display:flex;
+    border:3px solid #7a0019;
+    padding:20px;
+    margin:20px;
+}
